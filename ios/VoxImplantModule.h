@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 #import "VoxImplant.h"
 
 @interface VoxImplantModule : NSObject <RCTBridgeModule, VoxImplantDelegate>
