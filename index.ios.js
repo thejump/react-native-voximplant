@@ -20,18 +20,17 @@ const {
 const VoxImplantModule = NativeModules.VoxImplantModule;
 
 
-
-var VoxImplantPreview = React.createClass({
+	class VoxImplantPreview extends Component {
   render() {
   	return <VoxImplantRendererView style={this.props.style} previewProperty={true} />
-  },
-});
+  }
+}
 
 	class VoxImplantRemoteView extends Component {
   render() {
   	return <VoxImplantRendererView style={this.props.style} previewProperty={false} />
-  },
-});
+  }
+}
 
 const VoxImplantRendererView = requireNativeComponent('VoxImplantRendererView', VoxImplantRendererView, {
   nativeOnly: {
