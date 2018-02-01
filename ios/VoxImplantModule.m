@@ -6,9 +6,9 @@
 //
 
 #import "VoxImplantModule.h"
-#import "RCTLog.h"
-#import "RCTBridge.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTLog.h>
+#import <React/RCTBridge.h>
+#import <React/RCTEventDispatcher.h>
 
 @interface VoxImplantModule ()
 {
