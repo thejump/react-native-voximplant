@@ -4,17 +4,19 @@
 'use strict';
 
 import React from 'react';
-import ReactNative from 'react-native';
+
+import {
+    NativeModules,
+    requireNativeComponent,
+    StyleSheet,
+} from 'react-native';
+
 
 const {
-  Component,
-  PropTypes
+  Component
+  
 } = React;
 
-const {
-  NativeModules,
-  requireNativeComponent
-} = ReactNative;
 const VoxImplantModule = NativeModules.VoxImplantModule;
 
 
@@ -25,7 +27,7 @@ var VoxImplantPreview = React.createClass({
   },
 });
 
-var VoxImplantRemoteView = React.createClass({
+	class VoxImplantRemoteView extends Component {
   render() {
   	return <VoxImplantRendererView style={this.props.style} previewProperty={false} />
   },
